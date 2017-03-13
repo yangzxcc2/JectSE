@@ -13,5 +13,6 @@ public class CurrencyTest {
     public void testExchange(){
         Currency currency= new Currency();
         assertThat(currency.exchange("USD",1.0,"USD"),closeTo(1.0,0.001));
+        assertThat(currency.exchange("USD",1.0,"THB"),closeTo(1.0,0.001));
     }
 }
